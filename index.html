@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal Celao Sem Foco</title>
+<meta name="description" content="Portal Celao Sem Foco — notícias, ideias e produções escolares.">
+<style>
+:root{--bg:#11110b;--panel:#202020;--nav:#111;--gold:#c79b32;--blue:#0b617b;--text:#f1f1f1;--muted:#b9b9c2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+nav{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;background:#151515;padding:14px 10px;border-bottom:1px solid #343434}
+nav a{color:#d6d6df;text-decoration:none;font-size:14px;font-weight:600}
+nav a:hover{color:var(--gold)}
+header{background:linear-gradient(110deg,#07113b,#10103b 55%,#07113b);padding:25px 16px;text-align:center;border-bottom:4px solid var(--gold)}
+.brand{display:flex;align-items:center;justify-content:center;gap:15px}
+.logo{width:64px;height:64px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:14px;background:#13235c}
+.kicker{font-size:10px;letter-spacing:2px;color:var(--gold);margin-bottom:5px}
+h1{margin:0;font-family:Georgia,serif;font-size:clamp(25px,5vw,38px)}
+h1 span{color:var(--gold)}
+header p{margin:8px 0 0;font-style:italic;color:#d6d6e3;font-size:14px}
+main{max-width:1200px;margin:auto;padding:24px 18px}
+.section-title{font-family:Georgia,serif;font-size:26px;margin:10px 0 20px;border-left:10px solid var(--blue);padding-left:10px}
+.feature{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-bottom:30px}
+.feature-card,.article{background:var(--panel);border:1px solid #343434;border-radius:12px;overflow:hidden}
+.feature-card img{width:100%;height:300px;object-fit:cover;display:block}
+.feature-copy{padding:18px}
+.feature-copy h2{font-family:Georgia,serif;margin:0 0 10px}
+.feature-copy p{color:var(--muted);line-height:1.5}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.article img{width:100%;height:220px;object-fit:cover;display:block;background:#333}
+.article-body{padding:14px}
+.article h3{font-size:16px;line-height:1.45;margin:0 0 10px}
+.meta{font-size:12px;color:#b6b6c3}
+.tag{display:inline-block;color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+footer{text-align:center;color:var(--muted);padding:30px 15px;border-top:1px solid #333;margin-top:35px}
+@media(max-width:800px){.feature{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){nav{gap:15px}nav a{font-size:12px}.brand{gap:10px}.logo{width:52px;height:52px;font-size:11px}.grid{grid-template-columns:1fr 1fr;gap:12px}.article img{height:190px}.article-body{padding:11px}.article h3{font-size:14px}main{padding:20px 12px}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#noticias">Notícias</a><a href="#opiniao">Opinião</a><a href="#entrevistas">Entrevistas</a>
+<a href="#resenhas">Resenha Crítica</a><a href="#esportes">Esportes</a><a href="#artes">Artes</a>
+</nav>
+<header>
+<div class="brand">
+<div class="logo">CELAO</div>
+<div>
+<div class="kicker">JORNAL ESCOLAR • COLÉGIO ESTADUAL</div>
+<h1>Portal Celao <span>Sem Foco</span></h1>
+</div>
+</div>
+<p>“Nossa escola, nossas vozes.”</p>
+</header>
+<main id="noticias">
+<h2 class="section-title">Destaques</h2>
+<section class="feature">
+<div class="feature-card">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80" alt="Estudantes em ambiente de estudo">
+<div class="feature-copy"><span class="tag">Destaque</span><h2>Um espaço para as ideias da escola</h2><p>Notícias, projetos, histórias e opiniões produzidas pela comunidade escolar. Este é o espaço para compartilhar o que acontece e dar voz aos estudantes.</p></div>
+</div>
+<div class="feature-card">
+<div class="feature-copy">
+<span class="tag">Sobre o portal</span>
+<h2>Sem Foco — com muitas perspectivas</h2>
+<p>Um portal escolar para divulgar produções, eventos, criatividade, esporte, cultura e informação.</p>
+<p><strong>Seu conteúdo começa aqui.</strong></p>
+</div>
+</div>
+</section>
+<h2 class="section-title">Últimas publicações</h2>
+<section class="grid">
+<article class="article" id="opiniao"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Caderno e escrita"><div class="article-body"><span class="tag">Opinião</span><h3>Espaço para uma nova opinião</h3><div class="meta">Redação • Adicione a data</div></div></article>
+<article class="article" id="entrevistas"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80" alt="Microfone"><div class="article-body"><span class="tag">Entrevistas</span><h3>Conheça histórias da comunidade escolar</h3><div class="meta">Redação • Adicione a data</div></div></article>
+<article class="article" id="resenhas"><img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=800&q=80" alt="Livros"><div class="article-body"><span class="tag">Resenha Crítica</span><h3>Leituras, filmes e reflexões</h3><div class="meta">Redação • Adicione a data</div></div></article>
+<article class="article" id="esportes"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80" alt="Atletas correndo"><div class="article-body"><span class="tag">Esportes</span><h3>O esporte também tem espaço por aqui</h3><div class="meta">Redação • Adicione a data</div></div></article>
+<article class="article" id="artes"><img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=800&q=80" alt="Materiais de pintura"><div class="article-body"><span class="tag">Artes</span><h3>Exposição de criatividade e talento</h3><div class="meta">Redação • Adicione a data</div></div></article>
+<article class="article"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80" alt="Biblioteca"><div class="article-body"><span class="tag">Escola</span><h3>Projetos e novidades do colégio</h3><div class="meta">Redação • Adicione a data</div></div></article>
+</section>
+</main>
+<footer>Portal Celao Sem Foco • Jornal escolar<br>© 2026 — Produção estudantil</footer>
+</body>
+</html>
